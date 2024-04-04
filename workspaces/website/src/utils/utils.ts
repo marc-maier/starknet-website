@@ -10,8 +10,8 @@ export function getComputedLinkData(
   locale: string,
   link?: LinkData
 ): { href?: string; label?: string } {
-  if(!link){
-    return {href: '', label: ''}
+  if (!link) {
+    return { href: "", label: "" };
   }
   let href;
 
@@ -28,8 +28,8 @@ export function getComputedLinkData(
     href = `/${locale}/content/${link.post_data.slug}`;
   }
 
-  if(!href){
-    href = '#'
+  if (!href) {
+    href = "#";
   }
 
   return { href, label };
@@ -49,3 +49,5 @@ export function loadScript(url: string) {
     head.appendChild(script);
   });
 }
+export const gtmEvent = (target: string) =>
+  window.gtag?.("event", target, { event_category: "engagement" });
