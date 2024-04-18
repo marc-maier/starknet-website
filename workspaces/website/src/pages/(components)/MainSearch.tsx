@@ -1,6 +1,5 @@
 import "src/style/algolia/theme.css";
 import "src/style/algolia/overrides.css";
-
 import {
   AutocompleteOptions,
   getAlgoliaResults,
@@ -100,7 +99,7 @@ export interface Props {
     readonly ALGOLIA_APP_ID: string;
     readonly ALGOLIA_SEARCH_API_KEY: string;
   };
-  seo: SEOTexts['search']
+  seo: SEOTexts["search"];
 }
 
 export function MainSearch({ env, seo }: Props): JSX.Element | null {
@@ -109,7 +108,6 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
       env.ALGOLIA_APP_ID,
       env.ALGOLIA_SEARCH_API_KEY
     );
-
     const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
       key: "algolia-recent-searches-plugin",
       limit: 3,
@@ -139,7 +137,7 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
           },
           onSelect({ setIsOpen }) {
             setIsOpen(true);
-          }
+          },
         };
       },
     });
@@ -173,11 +171,10 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
           },
           onSelect({ setIsOpen }) {
             setIsOpen(true);
-          }
+          },
         };
       },
     });
-
     return { searchClient, recentSearchesPlugin, querySuggestionsPlugin };
   }, [env.ALGOLIA_APP_ID, env.ALGOLIA_INDEX, env.ALGOLIA_SEARCH_API_KEY]);
   const { locale } = usePageContext();
@@ -197,7 +194,6 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
         placeholder={seo?.search}
         getSources={({ query }) => {
           if (!query) return [];
-
           return [
             {
               sourceId: "posts",
@@ -207,7 +203,6 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
               getItems() {
                 return getAlgoliaResults({
                   searchClient: data.searchClient,
-
                   queries: [
                     {
                       params: {
@@ -277,8 +272,7 @@ export function MainSearch({ env, seo }: Props): JSX.Element | null {
                         attributesToSnippet: ["title:8", "content:10"],
                         snippetEllipsisText: "...",
                       },
-
-                      indexName: "starknet-docs-dev",
+                      indexName: `starknet-docs-main`,
                       query,
                     },
                   ],
@@ -378,10 +372,7 @@ export function PostItem({
   components: { Highlight },
 }: ItemProps<Post>) {
   return (
-    <a
-      href={`/${hit.locale}/content/${hit.slug}`}
-      className="aa-ItemLink"
-    >
+    <a href={`/${hit.locale}/content/${hit.slug}`} className="aa-ItemLink">
       <div className="aa-ItemContent">
         <div className="aa-ItemIcon aa-ItemIcon--noBorder">
           <svg

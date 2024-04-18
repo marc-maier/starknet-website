@@ -5,7 +5,7 @@
 import { Box, Show } from "@chakra-ui/react";
 import {
   VideoSectionBlock as VideoSectionProps,
-  ChapterInfo
+  ChapterInfo,
 } from "@starknet-io/cms-data/src/pages";
 
 import { CategoryTabs } from "@ui/CategoryTabs/CategoryTabs";
@@ -30,15 +30,19 @@ export default function VideoSectionBlock(props: VideoSectionProps) {
 
   const normalizedPlaylist = useMemo(() => {
     return playlist.map((chapter) => {
-      const chapterInfo = props[chapter.id as keyof VideoSectionProps] as ChapterInfo;
-      return ({
+      const chapterInfo = props[
+        chapter.id as keyof VideoSectionProps
+      ] as ChapterInfo;
+      return {
         ...chapter,
-        ...chapterInfo
-      }) as ChapterType;
+        ...chapterInfo,
+      } as ChapterType;
     });
-  }, [props, playlist])
+  }, [props, playlist]);
 
-  const [currentChapter, setCurrentChapter] = useState<ChapterType>(normalizedPlaylist[0]);
+  const [currentChapter, setCurrentChapter] = useState<ChapterType>(
+    normalizedPlaylist[0]
+  );
 
   return (
     <Box>
@@ -54,18 +58,25 @@ export default function VideoSectionBlock(props: VideoSectionProps) {
       <VideoPlayerWebsite
         chapters={normalizedPlaylist}
         currentChapter={currentChapter}
-        onChapterChange={(id) => 
-          setCurrentChapter(normalizedPlaylist.find((p) => p.id === id) ?? normalizedPlaylist[0])
+        onChapterChange={(id) =>
+          setCurrentChapter(
+            normalizedPlaylist.find((p) => p.id === id) ?? normalizedPlaylist[0]
+          )
         }
         playlistOnBottom={playlistOnBottom}
       />
 
-      <Box marginTop={{ base: "32px", lg: !playlistOnBottom ? "64px" : "32px"  }}>
-        <Show above="lg">   
+      <Box
+        marginTop={{ base: "32px", lg: !playlistOnBottom ? "64px" : "32px" }}
+      >
+        <Show above="lg">
           <CategoryTabs
             currentChapter={currentChapter}
-            onChapterChange={(id) => 
-              setCurrentChapter(normalizedPlaylist.find((p) => p.id === id) ?? normalizedPlaylist[0])
+            onChapterChange={(id) =>
+              setCurrentChapter(
+                normalizedPlaylist.find((p) => p.id === id) ??
+                  normalizedPlaylist[0]
+              )
             }
             items={normalizedPlaylist.map((p) => ({
               id: p.id,
@@ -77,9 +88,18 @@ export default function VideoSectionBlock(props: VideoSectionProps) {
         <Box
           maxW={chapterDescriptionFullWidth ? "100%" : "656px"}
           marginInline="auto"
-          marginTop={'32px'}
+          marginTop={"32px"}
         >
-          <MarkdownBlock body={currentChapter.content} />
+          {normalizedPlaylist.map((chapter) => (
+            <Box
+              role="tabpanel"
+              hidden={chapter.id !== currentChapter.id}
+              id={`${chapter.id}-content`}
+              key={`${chapter.id}-content`}
+            >
+              <MarkdownBlock body={chapter.content} />
+            </Box>
+          ))}
         </Box>
       </Box>
     </Box>
