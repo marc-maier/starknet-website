@@ -9,6 +9,28 @@ blocks:
   - type: hero
     variant: seed_grant_program
     title: Seed Grant Program
+  - type: card_display
+    title: Application Process
+    button: Apply Now
+    buttonLink: https://starknet.questbook.app/proposal_form/?grantId=661667585afea0acb56c9f08&chainId=10&newTab=true
+    card_display_items:
+      - title: Application
+        description: "Applicants will submit proposals via an Questbook application form
+          provided by the Starknet Foundation team. "
+      - title: Internal Evaluation
+        description: " Each application will be assessed by members of the Starknet
+          Foundation and Starkware team based on criteria such as potential
+          impact, innovation, milestones, community engagement & track record,
+          and embeddedness with the Starknet ecosystem."
+      - title: Results
+        description: We plan to communicate decisions on your application within an
+          approximate two week timeframe.
+      - title: Onboarding
+        description: "Upon signing a grant agreement and completing KYC, the Starknet
+          Foundation will send funds. "
+      - title: Grant Deliverables
+        description: "After completion of the work, the Foundation will assess results
+          and share deliverables (blog post, video, AMA) with the team.  "
   - type: flex_layout
     heading_variant: sm
     blocks:
@@ -55,28 +77,14 @@ blocks:
 
           * Any criminal activity
     heading: Who is Not Eligible
-  - type: card_display
-    title: Application Process
-    button: Apply Now
-    buttonLink: https://starknet.questbook.app/proposal_form/?grantId=661667585afea0acb56c9f08&chainId=10&newTab=true
-    card_display_items:
-      - title: Application
-        description: "Applicants will submit proposals via an Questbook application form
-          provided by the Starknet Foundation team. "
-      - title: Internal Evaluation
-        description: " Each application will be assessed by members of the Starknet
-          Foundation and Starkware team based on criteria such as potential
-          impact, innovation, milestones, community engagement & track record,
-          and embeddedness with the Starknet ecosystem."
-      - title: Results
-        description: We plan to communicate decisions on your application within an
-          approximate two week timeframe.
-      - title: Onboarding
-        description: "Upon signing a grant agreement and completing KYC, the Starknet
-          Foundation will send funds. "
-      - title: Grant Deliverables
-        description: "After completion of the work, the Foundation will assess results
-          and share deliverables (blog post, video, AMA) with the team.  "
+  - type: card_list
+    randomize: false
+    title: Apply Now!
+    card_list_items:
+      - title: Seed Grant Program Application Form
+        description: Application Form
+        website_url: "https://starknet.questbook.app/proposal_form/?grantId=661667585af\
+          ea0acb56c9f08&chainId=10&newTab=true "
   - type: accordion
     heading: FAQs
     blocks:
