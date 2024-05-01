@@ -58,6 +58,7 @@ export enum EVENT_CATEGORY {
   CUSTOM_EVENT = "custom_event",
   USER_ENGAGEMENT = "user_engagement",
   SCROLL = "scroll",
+  LINK = "link",
   ENGAGEMENT = "engagement",
 }
 

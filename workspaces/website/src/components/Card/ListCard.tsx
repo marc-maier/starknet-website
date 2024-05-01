@@ -50,7 +50,12 @@ export const ListCard = (props: Props) => {
   const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
 
   return (
-    <Box maxW="5xl">
+    <Box
+      maxW="5xl"
+      onClick={() =>
+        gtmEvent(props.title!.replace(/ /g, "_"), EVENT_CATEGORY.LINK)
+      }
+    >
       <LinkBox sx={{ textDecoration: "none!important", cursor: "pointer" }}>
         <CardGradientBorder padding="0" borderRadius={{ base: "16px" }}>
           <Box
@@ -92,15 +97,12 @@ export const ListCard = (props: Props) => {
               <Box flex="1">
                 {props.startDateTime && (
                   <Text
-                    // mt="2"
                     fontSize="xs"
                     fontWeight="bold"
                     color="list-card-sm-title-fg"
                     display="flex"
                     flexDirection={{ base: "row", md: "row" }}
-                    // justifyContent="space-between"
                     alignItems={{ base: "flex-start", md: "center" }}
-                    // margin="0"
                   >
                     {props.startDateTime}
                     {props.city && (
@@ -109,15 +111,11 @@ export const ListCard = (props: Props) => {
                       </Text>
                     )}
                     <Text
-                      // mt="2"
                       fontSize="xs"
                       fontWeight="bold"
                       color="list-card-sm-title-fg"
-                      // paddingBottom="4px",
-
                       as="span"
                     >
-                      {/* {props.city} */}
                       {props.city && `  ${props.city}, `}
                       {props.country && props.country}
                     </Text>
@@ -127,8 +125,6 @@ export const ListCard = (props: Props) => {
                   spacing={{ base: "1", md: "2" }}
                   direction={{ base: "row", md: "row" }}
                   pb="4px"
-                  // removing until designers look at this
-                  // borderTop={!props.startDateTime ? "none" : "1px solid red"}
                   paddingTop="4px"
                 >
                   <Heading
@@ -141,7 +137,6 @@ export const ListCard = (props: Props) => {
                     {props.title}
                   </Heading>
                   <HStack fontSize={{ base: "md", md: "xl" }}>
-                    {/* <Icon as={FiExternalLink} color="list-card-sm-title-link-fg" /> */}
                     <Icon
                       as={HiArrowTopRightOnSquare}
                       color="list-card-sm-title-link-fg"
@@ -154,24 +149,25 @@ export const ListCard = (props: Props) => {
                   fontSize="sm"
                   color="list-card-lg-desc-fg"
                   href={props.href!}
-                  onClick={() =>
-                    gtmEvent(`move to:${props.href!}`, EVENT_CATEGORY.CLICK)
-                  }
                   target="_blank"
                 >
                   {props.description}
                 </LinkOverlay>
-                {/* {props.variant === "event" && (
-                <Box py="8px">
-                  <Button variant="outline" size="sm">
-                    View event recap
-                  </Button>
-                </Box>
-              )} */}
                 {props.type_list ? (
                   <Wrap shouldWrapChildren mb="12px">
                     {props.type_list.map((tag) => (
-                      <Link key={tag.type} isExternal href={tag.url}>
+                      <Link
+                        key={tag.type}
+                        isExternal
+                        href={tag.url}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          gtmEvent(
+                            `move_to:${tag.url.replace(/ /g, "_")}`,
+                            EVENT_CATEGORY.LINK
+                          );
+                        }}
+                      >
                         <Tag variant="listCard">
                           {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
                         </Tag>
@@ -201,7 +197,17 @@ export const ListCard = (props: Props) => {
                   {props.href &&
                     props.variant !== "event" &&
                     props.variant !== "job" && (
-                      <Link isExternal href={`${props.href}`}>
+                      <Link
+                        isExternal
+                        href={`${props.href}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          gtmEvent(
+                            `move_to:${props.href.replace(/ /g, "_")}`,
+                            EVENT_CATEGORY.LINK
+                          );
+                        }}
+                      >
                         <Icon
                           boxSize="18px"
                           color="list-card-icon-fg"
