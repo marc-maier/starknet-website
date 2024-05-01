@@ -4,7 +4,6 @@ import { Heading } from "@ui/Typography/Heading";
 import { Text } from "@ui/Typography/Text";
 import { Intro } from "./Intro";
 import ProvisionsPopup from "@ui/ProvisionsPopup/ProvisionsPopup";
-
 type Props = {
   readonly seo: {
     heroText: string;
@@ -120,7 +119,8 @@ export const HomepageHero = ({ seo }: Props) => {
               >
                 <Button
                   href="/en/developers"
-                  size="lg"
+                  size="xl"
+                  fontSize="lg"
                   minW="210px"
                   variant="primaryHero"
                 >
@@ -128,19 +128,25 @@ export const HomepageHero = ({ seo }: Props) => {
                 </Button>
                 <Button
                   size="lg"
+                  fontSize="lg"
+                  gap={2}
                   variant="secondaryHero"
                   href="https://starkgate.starknet.io/"
                   target="_blank"
                 >
                   Bridge
+                  <Img
+                    pos="relative"
+                    w="24px"
+                    h="24px"
+                    src="/assets/link.svg"
+                    alt="curves"
+                    objectFit={{ base: "cover", lg: "cover" }}
+                  />
                 </Button>
               </Stack>
             </Box>
-            <Box
-              zIndex={0}
-              order={{ base: 0, lg: 1 }}
-              // boxSize={{ base: "20", lg: "8" }}
-            />
+            <Box zIndex={0} order={{ base: 0, lg: 1 }} />
             <Img
               position="relative"
               marginRight={{
