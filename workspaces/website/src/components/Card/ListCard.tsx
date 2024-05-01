@@ -16,7 +16,7 @@ import { Text } from "@ui/Typography/Text";
 import { HiArrowTopRightOnSquare, HiGlobeAlt } from "react-icons/hi2";
 import { SiTwitter, SiDiscord } from "react-icons/si";
 import { CardGradientBorder } from "@ui/Card/components/CardGradientBorder";
-import { titleCase } from "src/utils/utils";
+import { EVENT_CATEGORY, gtmEvent, titleCase } from "src/utils/utils";
 import { Button } from "@ui/Button";
 
 interface Type {
@@ -47,13 +47,11 @@ type Props = {
 
 export const ListCard = (props: Props) => {
   const cloudflareImage = `https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
-  const isProd  = import.meta.env.VITE_ALGOLIA_INDEX === "production";
-  
+  const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
+
   return (
     <Box maxW="5xl">
-      <LinkBox
-        sx={{ textDecoration: "none!important", cursor: "pointer" }}
-      >
+      <LinkBox sx={{ textDecoration: "none!important", cursor: "pointer" }}>
         <CardGradientBorder padding="0" borderRadius={{ base: "16px" }}>
           <Box
             w={{ base: "full" }}
@@ -72,23 +70,25 @@ export const ListCard = (props: Props) => {
               spacing={{ base: "3", md: "6" }}
               align="center"
             >
-              {props.image && <Stack spacing="4">
-                <Box
-                  width="80px"
-                  height="80px"
-                  borderRadius="8px"
-                  overflow="hidden"
-                  marginBottom={{ base: "16px", md: "0" }}
-                >
-                  <Img
-                    width="full"
-                    height="full"
-                    src={isProd ? cloudflareImage : props.image}
-                    title={props.title}
-                    objectFit="contain"
-                  />
-                </Box>
-              </Stack>}
+              {props.image && (
+                <Stack spacing="4">
+                  <Box
+                    width="80px"
+                    height="80px"
+                    borderRadius="8px"
+                    overflow="hidden"
+                    marginBottom={{ base: "16px", md: "0" }}
+                  >
+                    <Img
+                      width="full"
+                      height="full"
+                      src={isProd ? cloudflareImage : props.image}
+                      title={props.title}
+                      objectFit="contain"
+                    />
+                  </Box>
+                </Stack>
+              )}
               <Box flex="1">
                 {props.startDateTime && (
                   <Text
@@ -149,11 +149,14 @@ export const ListCard = (props: Props) => {
                   </HStack>
                 </Stack>
 
-                <LinkOverlay 
-                  pb="12px" 
-                  fontSize="sm" 
+                <LinkOverlay
+                  pb="12px"
+                  fontSize="sm"
                   color="list-card-lg-desc-fg"
                   href={props.href!}
+                  onClick={() =>
+                    gtmEvent(`move to:${props.href!}`, EVENT_CATEGORY.CLICK)
+                  }
                   target="_blank"
                 >
                   {props.description}
@@ -168,11 +171,7 @@ export const ListCard = (props: Props) => {
                 {props.type_list ? (
                   <Wrap shouldWrapChildren mb="12px">
                     {props.type_list.map((tag) => (
-                      <Link
-                        key={tag.type}
-                        isExternal
-                        href={tag.url}
-                      >
+                      <Link key={tag.type} isExternal href={tag.url}>
                         <Tag variant="listCard">
                           {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
                         </Tag>
@@ -198,14 +197,11 @@ export const ListCard = (props: Props) => {
                   )
                 )}
 
-                <Wrap spacingX="24px" shouldWrapChildren mt='20px'>
+                <Wrap spacingX="24px" shouldWrapChildren mt="20px">
                   {props.href &&
                     props.variant !== "event" &&
                     props.variant !== "job" && (
-                      <Link
-                        isExternal
-                        href={`${props.href}`}
-                      >
+                      <Link isExternal href={`${props.href}`}>
                         <Icon
                           boxSize="18px"
                           color="list-card-icon-fg"
@@ -214,10 +210,7 @@ export const ListCard = (props: Props) => {
                       </Link>
                     )}
                   {props.twitter && (
-                    <Link
-                      isExternal
-                      href={`${props.twitter}`}
-                    >
+                    <Link isExternal href={`${props.twitter}`}>
                       <Icon
                         boxSize="18px"
                         color="list-card-icon-fg"
@@ -226,10 +219,7 @@ export const ListCard = (props: Props) => {
                     </Link>
                   )}
                   {props.discord && (
-                    <Link
-                      isExternal
-                      href={`${props.discord}`}
-                    >
+                    <Link isExternal href={`${props.discord}`}>
                       <Icon
                         boxSize="18px"
                         color="list-card-icon-fg"
