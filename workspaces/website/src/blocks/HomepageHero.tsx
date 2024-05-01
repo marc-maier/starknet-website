@@ -129,9 +129,10 @@ export const HomepageHero = ({ seo }: Props) => {
                 <Button
                   size="lg"
                   variant="secondaryHero"
-                  href="/en/explore-starknet"
+                  href="https://starkgate.starknet.io/"
+                  target="_blank"
                 >
-                  Explore Starknet
+                  Bridge
                 </Button>
               </Stack>
             </Box>
