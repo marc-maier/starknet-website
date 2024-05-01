@@ -4,6 +4,7 @@ import { Heading } from "@ui/Typography/Heading";
 import { Text } from "@ui/Typography/Text";
 import { Intro } from "./Intro";
 import ProvisionsPopup from "@ui/ProvisionsPopup/ProvisionsPopup";
+import { gtmEvent } from "src/utils/utils";
 type Props = {
   readonly seo: {
     heroText: string;
@@ -133,6 +134,7 @@ export const HomepageHero = ({ seo }: Props) => {
                   variant="secondaryHero"
                   href="https://starkgate.starknet.io/"
                   target="_blank"
+                  onClick={() => gtmEvent("Bridge_button_click")}
                 >
                   Bridge
                   <Img
