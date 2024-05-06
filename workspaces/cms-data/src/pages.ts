@@ -205,6 +205,7 @@ export interface VideoSectionBlock {
 
 export interface NewsletterBlock {
   readonly type: "newsletter_popup";
+  readonly buttonText: string;
   readonly title: string;
   readonly description: string;
 }

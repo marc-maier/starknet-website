@@ -848,6 +848,12 @@ export const blocks = [
         name: "description",
         widget: "string",
       },
+      {
+        crowdin: true,
+        label: "buttonText",
+        name: "buttonText",
+        widget: "string",
+      },
     ],
   },
   {
