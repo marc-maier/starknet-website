@@ -8,6 +8,8 @@ import type { ListCardItems } from "@starknet-io/cms-data/src/pages";
 interface Props extends LocaleProps {
   title: string;
   description?: string;
+  reverse?: boolean;
+  showIcons?: boolean;
   card_list_items: ListCardItems[];
   randomize?: boolean;
 }
@@ -16,6 +18,8 @@ export default function ListCardItems({
   params: { locale },
   title,
   description,
+  reverse,
+  showIcons,
   card_list_items,
 }: Props): JSX.Element {
   return (
@@ -25,7 +29,7 @@ export default function ListCardItems({
           <Heading
             color="heading-navy-fg"
             variant="h3"
-            mb="10px"
+            mb="24px"
             id={`toc-${slugify(title)}`}
           >
             {title}
@@ -44,6 +48,8 @@ export default function ListCardItems({
                   href={website_url}
                   key={`${card.title}-${i}`}
                   startDateTime={start_date_time}
+                  reverse={reverse}
+                  showIcons={showIcons}
                   type={type?.split(",")}
                   {...card}
                 />

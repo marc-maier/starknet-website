@@ -131,12 +131,13 @@ export const HomepageHero = ({ seo }: Props) => {
                 <Button
                   size="lg"
                   variant="secondaryHero"
-                  href="/en/explore-starknet"
+                  href="https://starkgate.starknet.io/"
+                  target="_blank"
                   onClick={() =>
                     gtmEvent("Explore_Starknet", EVENT_CATEGORY.BUTTON_CLICK)
                   }
                 >
-                  Explore Starknet
+                  Bridge
                 </Button>
               </Stack>
             </Box>
