@@ -5,6 +5,7 @@ import { Text } from "@ui/Typography/Text";
 import { Intro } from "./Intro";
 import ProvisionsPopup from "@ui/ProvisionsPopup/ProvisionsPopup";
 import { gtmEvent } from "src/utils/utils";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 type Props = {
   readonly seo: {
     heroText: string;
@@ -137,14 +138,7 @@ export const HomepageHero = ({ seo }: Props) => {
                   onClick={() => gtmEvent("Bridge_button_click")}
                 >
                   Bridge
-                  <Img
-                    pos="relative"
-                    w="24px"
-                    h="24px"
-                    src="/assets/link.svg"
-                    alt="curves"
-                    objectFit={{ base: "cover", lg: "cover" }}
-                  />
+                  <HiArrowTopRightOnSquare />
                 </Button>
               </Stack>
             </Box>
