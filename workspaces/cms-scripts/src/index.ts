@@ -347,6 +347,7 @@ const extractTags = (projects: Project[]): TagObject[] => {
 const slugifyDApps = slugifyTags(dAppsData.content);
 const categories = extractTags(dAppsData.content);
 
+await fs.mkdir("public/data/starknet-db-projects-dapps", { recursive: true });
 await write(
   `public/data/starknet-db-projects-dapps/starknet-db-projects-dapps.json`,
   { list: slugifyDApps, categories }
