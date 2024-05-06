@@ -11,7 +11,6 @@ const useQueryString = () => {
   useEffect(() => {
     const queryString = url.search;
     const searchParams = new URLSearchParams(queryString);
-    console.log(searchParams);
 
     const paramsObject = Object.fromEntries(searchParams.entries());
     setQueryString(paramsObject);
