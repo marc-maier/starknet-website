@@ -1,0 +1,22 @@
+id: 66791ff1-3eff-40bf-b909-f4e8eec0a4bc
+published_at: 2024-03-13T08:47:47.233Z
+status: active
+archive_after: 3
+contact:
+  name: Nethermind
+  email: ""
+  logo: /assets/nethermind-logo.png
+job:
+  title: Research Engineer, L2
+  description: The ideal candidate is an engineer with strong low-level
+    programming and analytical skills, experienced in implementing and
+    optimizing cryptographic primitives. Candidates should be able to work in a
+    distributed research team, collaborating with researchers and other
+    engineers to create proofs-of-concept of cutting-edge blockchain and
+    cryptography protocols. We appreciate candidates who are not afraid of
+    voicing their opinions and motivate them to ask for explanations of concepts
+    they are not familiar with.
+  type: full_time
+  location: global_remote
+  how_to_apply: ""
+  apply_url: https://boards.eu.greenhouse.io/nethermind/jobs/4297652101

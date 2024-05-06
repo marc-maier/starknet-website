@@ -1,0 +1,156 @@
+id: a773c7de-151e-4681-b7f8-1e593c60b925
+post_type: article
+title: Starknet Foundation Launches the Propulsion Pilot Program
+toc: true
+published_date: 2024-04-24T12:48:41.432Z
+image: /assets/starknet-fnd-onboarding-committees-post-v1-1-.png
+category:
+  - 757155c6-ce07-49f1-af21-907b7e0b1cb1
+topic:
+  - 47ef120d-7b74-40a3-acb2-0ff2af28ecf4
+  - bf9c7bc3-ba10-4865-8e69-8be4cfa68f29
+  - 25c0a1fa-dd14-4179-98e6-7f4a98b66854
+  - e0c85dbe-08f9-4a19-a8b0-e99852c84cb5
+short_desc: The Starknet Foundation introduces the Propulsion Pilot Program to
+  accelerate the growth of blockchain games and gaming studios on Starknet
+  Mainnet. Up to 20 selected games will receive up to $1 million each, based on
+  their gas usage. The program includes a submission phase, review,
+  announcement, and a 12-month execution phase for successful projects. Funding
+  is distributed monthly, proportionate to gas consumption, with additional
+  support for live applications. This initiative aims to promote innovation and
+  community engagement in blockchain gaming. Interested developers can apply
+  through the provided online form.
+blocks:
+  - type: group
+    blocks: []
+  - type: markdown
+    body: >-
+      #### TL;DR
+
+
+      * The Starknet Foundation is launching the Propulsion Pilot Program, an experimental pilot program aimed at accelerating the growth of Starknet games and gaming studios;
+
+      * The Pilot Program will select up to 20 games to receive up to 1M USD each, based on gas usage of their games on Starknet Mainnet;
+
+      * Games can apply for the first batch of the Propulsion Pilot Program starting now;
+
+
+      ## Introduction
+
+
+      In an era where many of the best interactive entertainment experiences are free, convincing players to pay for your game is a challenge. In blockchain gaming, this is further compounded by network fees -- costs that must be incurred in order for the game to function but that do not benefit the team developing the game. 
+
+
+      Blockchain game developers have enough to worry about without needing to also concern themselves with the costs of scaling. That's why Starknet Foundation is launching its Propulsion Pilot Program. 
+
+
+      The Propulsion Pilot Program is a first of its kind initiative aimed at supporting established teams in launching games on Starknet Mainnet (or appchains settled on Starknet Mainnet). The program will match network fees spent on games and credit them to game developers to support their growth and accelerate their development in the Starknet ecosystem.
+
+
+      Today we are announcing Season 0 of the Propulsion Pilot Program. After its success, this program will be followed up with further seasons and opportunities for participation.
+
+
+      ## Core Mechanism
+
+
+      The Propulsion Pilot Program proposes a mechanism to grant game developers funds based on the usage of their game in the form of a gas rebate. Every month, every game development team selected in the Pilot Program will receive the USD equivalent of the amount of gas spent by users playing their games on Starknet Mainnet.
+
+
+      ## Funding Breakdown
+
+
+      Each eligible application will receive a maximum of 1M USD, paid in STRK, over the course of a year. The fee matching will have a decaying schedule as follow:
+
+
+      * 90% of gas spent by users, up to 100K USD received by game developers
+
+      * 85% of gas spent by users, up to the next 100k USD received by game developers
+
+      * 80% of gas spent by users, up to the next 100k USD received by game developers
+
+      * …and so on, up to 1M USD in total
+
+
+      The grants will be paid monthly on a pro-rata basis indexed on gas usage. 
+
+
+      Additionally, applications that are live on mainnet or testnet with a proper UI at the time of application will receive 50k USD upfront to assist them in their launch efforts.
+
+
+      ## Application Process
+
+
+      ### Timeline 
+
+
+      The application timeline is divided into four phases:
+
+
+      * **Submission Phase**
+
+        The submission period will start from April 26th and last for 3 weeks until May 17th. Applications submitted after May 17th will not be accepted. 
+      * **Review Phase**
+
+        The reviewing stage will start from May 17th and last for 3 weeks until June 7th. During this stage, each application will be reviewed and assessed. 
+      * **Announcement Phase**
+
+        Shortly after the review period has concluded and the grant recipients have been selected, an official announcement will be posted.
+      * **Execution Phase**
+
+        The Pilot Program will run for the selected projects for 12 months.
+
+      ### Eligible Projects
+
+
+      Applicants can include multiple games in a single grant application (e.g., gaming studios). However, all gas measures will be applied to all games in a single application. 
+
+
+      Applications that include or promote hate, violence, bullying, harassment, threats against individuals or groups of people, illegal content, gambling or exploitation will be refused.  
+
+
+      Applicants will have to go through KYC/KYB to receive program rewards.
+
+
+      #### Existing Games
+
+
+      The Pilot Program is allocating 10 spots for existing games that have been live with at least one game on either Mainnet or Testnet. Applicants must have at least a front-end where users can interact with the game.  
+
+
+      #### Upcoming Games
+
+
+      The Pilot Program is allocating 10 spots for upcoming games that will deploy in the next 6-months on Starknet Mainnet or Testnet. Applicants must show a proven track record with relevant game development experience and a commitment to deploy within the timeframe. 
+
+
+      ### Evaluation Criteria
+
+
+      Applications will be evaluated on originality, innovation, team skills and track record, community engagement and long-term potential.
+
+
+      At the end of the evaluation period, the Foundation will publicly announce the names of the successful applications. The Foundation will not publish the names of the unsuccessful or ineligible applications.  
+
+
+      ### Application Form
+
+
+      To be eligible for a game grant, all prospective game developers must submit an application and a scope of work via the [online form](https://forms.gle/XkU6j3gnLTeTMFGR8). The application and scope of work should include game details, vision, roadmap, team composition, player onboarding plan, and marketing plan.
+
+
+      The application form is visible [here](https://forms.gle/XkU6j3gnLTeTMFGR8). 
+
+
+      ## Summary
+
+
+      The Propulsion Pilot Program represents an important initiative aimed at accelerating the growth of Starknet games and gaming studios while addressing the monetization challenges faced by blockchain games. 
+
+
+      This program is designed to foster innovation, encourage game developers and community engagement, and ultimately contribute to the long-term success of gaming on Starknet. 
+
+
+      Want to join the discussion about the Propulsion Pilot Program? Join our [community forum](https://community.starknet.io/) and follow [Starknet on X](https://twitter.com/Starknet).
+
+
+      To become a member of Starknet’s community, get started with the [Starknet Book](https://book.starknet.io/) and [Cairo Book](https://book.cairo-lang.org/).

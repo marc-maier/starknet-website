@@ -1,0 +1,24 @@
+type: meetup
+name: Starknet Workshop @ EPFL
+description: "Join us on May 16th for an exciting workshop on Starknet at EPFL.
+  We will be joined by Roberk from the Starknet Foundation. He will be hosting a
+  workshop about Starknet and Cairo.  ​It will be structured in two different
+  parts:  ​In the first part, we will focus on what Starknet is and how to get
+  started with Cairo, installing the necessary dependencies, learning about its
+  syntax, and solving interactive exercises.  ​In the second part, we will focus
+  on building a smart contract. This will cover the anatomy of a Starknet Smart
+  Contract and key concepts such as the constructor function, contract storage,
+  exposing functions, components, and more! Additionally, we will cover
+  cross-contract interaction and the utilization of external dependencies such
+  as OpenZeppelin. Finally, we will deploy it on Testnet with Starknet
+  Foundry!  ​Pizzas and drinks will be distributed at the end of the event if
+  you're registered!"
+url: https://lu.ma/w3gucrpr
+start_date: 2024-05-16T15:00:23.683Z
+month: May 2024
+end_date: 2024-05-16T17:30:23.688Z
+show_in_past_events: false
+image: /assets/screenshot-2024-04-21-135102.png
+location: europe
+city: Lausanne
+country: Switzerland

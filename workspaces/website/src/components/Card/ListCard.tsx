@@ -10,6 +10,7 @@ import {
   Img,
   LinkBox,
   LinkOverlay,
+  Flex,
 } from "@chakra-ui/react";
 import { Heading } from "@ui/Typography/Heading";
 import { Text } from "@ui/Typography/Text";
@@ -31,6 +32,8 @@ type Props = {
   readonly location?: string;
   readonly image?: string;
   readonly href: string;
+  readonly reverse?: boolean;
+  readonly showIcons?: boolean;
   readonly city?: string;
   readonly country?: string;
   readonly twitter?: string;
@@ -45,26 +48,39 @@ type Props = {
   };
 } & BoxProps;
 
-export const ListCard = (props: Props) => {
-  const cloudflareImage = `https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
-  const isProd  = import.meta.env.VITE_ALGOLIA_INDEX === "production";
-  
+export const ListCard = ({
+  reverse = false,
+  showIcons = true,
+  title,
+  startDateTime,
+  description,
+  location,
+  image,
+  href,
+  city,
+  country,
+  twitter,
+  discord,
+  variant,
+  type_list,
+  type,
+  recap,
+}: Props) => {
+  const cloudflareImage = image; //`https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
+  const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
+
   return (
     <Box maxW="5xl">
-      <LinkBox
-        sx={{ textDecoration: "none!important", cursor: "pointer" }}
-      >
+      <LinkBox sx={{ textDecoration: "none!important", cursor: "pointer" }}>
         <CardGradientBorder padding="0" borderRadius={{ base: "16px" }}>
           <Box
             w={{ base: "full" }}
             mx="auto"
             bg="card-bg"
             borderRadius="16px"
-            rounded={props.variant === "default" ? "8px" : "16px"}
+            rounded={variant === "default" ? "8px" : "16px"}
             padding={"32px 24px"}
-            // borderWidth="1px"
             borderColor="card-br"
-            // shadow={{ md: "base" }}
             px={{ base: "6", md: "8" }}
           >
             <Stack
@@ -72,182 +88,155 @@ export const ListCard = (props: Props) => {
               spacing={{ base: "3", md: "6" }}
               align="center"
             >
-              {props.image && <Stack spacing="4">
-                <Box
-                  width="80px"
-                  height="80px"
-                  borderRadius="8px"
-                  overflow="hidden"
-                  marginBottom={{ base: "16px", md: "0" }}
-                >
-                  <Img
-                    width="full"
-                    height="full"
-                    src={isProd ? cloudflareImage : props.image}
-                    title={props.title}
-                    objectFit="contain"
-                  />
-                </Box>
-              </Stack>}
+              {image && (
+                <Stack spacing="4">
+                  <Box
+                    width="80px"
+                    height="80px"
+                    borderRadius="8px"
+                    overflow="hidden"
+                    marginBottom={{ base: "16px", md: "0" }}
+                  >
+                    <Img
+                      width="full"
+                      height="full"
+                      src={isProd ? cloudflareImage : image}
+                      title={title}
+                      objectFit="contain"
+                    />
+                  </Box>
+                </Stack>
+              )}
               <Box flex="1">
-                {props.startDateTime && (
+                {startDateTime && (
                   <Text
-                    // mt="2"
                     fontSize="xs"
                     fontWeight="bold"
                     color="list-card-sm-title-fg"
                     display="flex"
                     flexDirection={{ base: "row", md: "row" }}
-                    // justifyContent="space-between"
                     alignItems={{ base: "flex-start", md: "center" }}
-                    // margin="0"
                   >
-                    {props.startDateTime}
-                    {props.city && (
+                    {startDateTime}
+                    {city && (
                       <Text fontSize="xs" fontWeight="bold" px="4px">
                         ·
                       </Text>
                     )}
                     <Text
-                      // mt="2"
                       fontSize="xs"
                       fontWeight="bold"
                       color="list-card-sm-title-fg"
-                      // paddingBottom="4px",
-
                       as="span"
                     >
-                      {/* {props.city} */}
-                      {props.city && `  ${props.city}, `}
-                      {props.country && props.country}
+                      {city && `  ${city}, `}
+                      {country && country}
                     </Text>
                   </Text>
                 )}
-                <Stack
-                  spacing={{ base: "1", md: "2" }}
-                  direction={{ base: "row", md: "row" }}
-                  pb="4px"
-                  // removing until designers look at this
-                  // borderTop={!props.startDateTime ? "none" : "1px solid red"}
-                  paddingTop="4px"
-                >
-                  <Heading
-                    variant="h4"
-                    color="btn-primary-bg"
-                    _dark={{
-                      color: "button-nav-fg",
-                    }}
+                <Flex direction={reverse ? "column-reverse" : "column"}>
+                  <Stack
+                    spacing={{ base: "1", md: "2" }}
+                    direction={{ base: "row", md: "row" }}
+                    pb="4px"
+                    paddingTop="4px"
                   >
-                    {props.title}
-                  </Heading>
-                  <HStack fontSize={{ base: "md", md: "xl" }}>
-                    {/* <Icon as={FiExternalLink} color="list-card-sm-title-link-fg" /> */}
-                    <Icon
-                      as={HiArrowTopRightOnSquare}
-                      color="list-card-sm-title-link-fg"
-                    />
-                  </HStack>
-                </Stack>
-
-                <LinkOverlay 
-                  pb="12px" 
-                  fontSize="sm" 
-                  color="list-card-lg-desc-fg"
-                  href={props.href!}
-                  target="_blank"
-                >
-                  {props.description}
-                </LinkOverlay>
-                {/* {props.variant === "event" && (
-                <Box py="8px">
-                  <Button variant="outline" size="sm">
-                    View event recap
-                  </Button>
-                </Box>
-              )} */}
-                {props.type_list ? (
-                  <Wrap shouldWrapChildren mb="12px">
-                    {props.type_list.map((tag) => (
-                      <Link
-                        key={tag.type}
-                        isExternal
-                        href={tag.url}
-                      >
-                        <Tag variant="listCard">
-                          {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
-                        </Tag>
-                      </Link>
-                    ))}
-                  </Wrap>
-                ) : (
-                  props.type && (
-                    <Wrap shouldWrapChildren mb="12px">
-                      {props.location && (
-                        <Tag variant="listCard">
-                          {titleCase(props.location)}
-                        </Tag>
-                      )}
-                      {props.type
-                        .filter((element) => element !== "")
-                        .map((tag) => (
-                          <Tag key={tag} variant="listCard">
-                            {titleCase(tag)}
-                          </Tag>
-                        ))}
-                    </Wrap>
-                  )
-                )}
-
-                <Wrap spacingX="24px" shouldWrapChildren mt='20px'>
-                  {props.href &&
-                    props.variant !== "event" &&
-                    props.variant !== "job" && (
-                      <Link
-                        isExternal
-                        href={`${props.href}`}
-                      >
-                        <Icon
-                          boxSize="18px"
-                          color="list-card-icon-fg"
-                          as={HiGlobeAlt}
-                        />
-                      </Link>
-                    )}
-                  {props.twitter && (
-                    <Link
-                      isExternal
-                      href={`${props.twitter}`}
+                    <Heading
+                      variant="h4"
+                      color="btn-primary-bg"
+                      _dark={{
+                        color: "button-nav-fg",
+                      }}
                     >
+                      {title}
+                    </Heading>
+                    <HStack fontSize={{ base: "md", md: "xl" }}>
                       <Icon
-                        boxSize="18px"
-                        color="list-card-icon-fg"
-                        as={SiTwitter}
+                        as={HiArrowTopRightOnSquare}
+                        color="list-card-sm-title-link-fg"
                       />
-                    </Link>
-                  )}
-                  {props.discord && (
-                    <Link
-                      isExternal
-                      href={`${props.discord}`}
-                    >
-                      <Icon
-                        boxSize="18px"
-                        color="list-card-icon-fg"
-                        as={SiDiscord}
-                      />
-                    </Link>
-                  )}
-                </Wrap>
-                {props.recap?.link && (
-                  <Button
-                    href={props.recap.link}
-                    mt="20px"
-                    isExternal={props.recap.isExternal}
-                    variant="outlineRounded"
+                    </HStack>
+                  </Stack>
+                  <LinkOverlay
+                    pb="12px"
+                    fontSize="sm"
+                    color="list-card-lg-desc-fg"
+                    href={href!}
                     target="_blank"
                   >
-                    {props.recap.label || "View event recap"}
-                  </Button>
+                    {description}
+                  </LinkOverlay>
+                </Flex>
+                {showIcons && (
+                  <>
+                    {type_list ? (
+                      <Wrap shouldWrapChildren mb="12px">
+                        {type_list.map((tag) => (
+                          <Link key={tag.type} isExternal href={tag.url}>
+                            <Tag variant="listCard">
+                              {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
+                            </Tag>
+                          </Link>
+                        ))}
+                      </Wrap>
+                    ) : (
+                      type && (
+                        <Wrap shouldWrapChildren mb="12px">
+                          {location && (
+                            <Tag variant="listCard">{titleCase(location)}</Tag>
+                          )}
+                          {type
+                            .filter((element) => element !== "")
+                            .map((tag) => (
+                              <Tag key={tag} variant="listCard">
+                                {titleCase(tag)}
+                              </Tag>
+                            ))}
+                        </Wrap>
+                      )
+                    )}
+
+                    <Wrap spacingX="24px" shouldWrapChildren mt="20px">
+                      {href && variant !== "event" && variant !== "job" && (
+                        <Link isExternal href={`${href}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={HiGlobeAlt}
+                          />
+                        </Link>
+                      )}
+                      {twitter && (
+                        <Link isExternal href={`${twitter}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={SiTwitter}
+                          />
+                        </Link>
+                      )}
+                      {discord && (
+                        <Link isExternal href={`${discord}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={SiDiscord}
+                          />
+                        </Link>
+                      )}
+                    </Wrap>
+                    {recap?.link && (
+                      <Button
+                        href={recap.link}
+                        mt="20px"
+                        isExternal={recap.isExternal}
+                        variant="outlineRounded"
+                        target="_blank"
+                      >
+                        {recap.label || "View event recap"}
+                      </Button>
+                    )}
+                  </>
                 )}
               </Box>
             </Stack>

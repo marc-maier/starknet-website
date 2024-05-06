@@ -2,7 +2,7 @@ items:
   - source: /
     destination: /en
   - source: /discord
-    destination: https://discord.gg/qypnmzkhbc
+    destination: https://discord.gg/starknet-community
   - source: /sequencer-api
     destination: /en/developers
   - source: /cairopal
@@ -136,11 +136,38 @@ items:
   - source: /en/posts/757155c6-ce07-49f1-af21-907b7e0b1cb1/introducing-the-starknet-foundation
     destination: https://www.starknet.io/en/content/introducing-the-starknet-foundation
   - source: /en/announcements
-    destination: https://www.starknet.io/en/content  
+    destination: https://www.starknet.io/en/content
   - source: /en/home
     destination: https://www.starknet.io/en
   - source: /en/announcements/product-update-april-2023
     destination: https://www.starknet.io/en/content
   - source: /en/posts/757155c6-ce07-49f1-af21-907b7e0b1cb1
     destination: https://www.starknet.io/en/content
-      
+  - source: /corestars
+    destination: https://76b3bqt1cf1.typeform.com/corestars
+  - source: /en/learn/frequently-asked-questions
+    destination: /starknet-frequently-asked-questions
+  - source: /wpl
+    destination: https://rbwiax75p4w.typeform.com/to/jPgPdA8l
+  - source: /de/
+    destination: /en/
+  - source: /es/
+    destination: /en/
+  - source: /fr/
+    destination: /en/
+  - source: /ja/
+    destination: /en/
+  - source: /ko/
+    destination: /en/
+  - source: /pt/
+    destination: /en/
+  - source: /pt/community/ambassadors-program
+    destination: /en/
+  - source: /learn/what-is-starknet
+    destination: /en/learn/what-is-starknet
+  - source: /fr/learn/what-is-starknet
+    destination: /en/learn/what-is-starknet
+  - destination: /en/learn/what-is-starknet
+    source: /ja/learn/what-is-starknet
+  - destination: /en/learn/what-is-starknet
+    source: /ko/learn/what-is-starknet

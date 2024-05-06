@@ -61,18 +61,17 @@ blocks:
             variant: large_card
             orientation: vertical
             withIllustration: false
-            title: Thriving Ecosystem
+            title: Developer Hub
             icon: /assets/creativity-unleased.png
             type: image_icon_link_card
             link:
-              custom_title: The Growing Starknet Stack
-              custom_internal_link: /content/the-starknet-stacks-growth-spurt
-            description: Starknet's meteoric rise as a blockchain ecosystem is fueled by its
-              passionate community of developers, users, and partners. With the
-              Starknet Stack evolving at an astounding pace, this vibrant
-              collective has developed the most decentralized Rollup Stack,
-              enhancing network security, censorship resistance, resilience, and
-              transparency.
+              custom_title: Get Started with Starknet
+              custom_internal_link: /developers
+            description: Starknet is home to the fastest-growing Layer 2 (L2) developer
+              community due to its novel approach to scaling Ethereum and making
+              it economically feasible to build even the most complex dApps. The
+              Developer Hub provides a variety of manuals and resources for
+              builders, by builders, on how to get started on Starknet.
             columns: "4"
         base: 1
         md: 2
@@ -185,10 +184,10 @@ blocks:
         size: large
         withIllustration: false
         color: null
-        title: What is STARK?
+        title: What is STRK?
         link:
           custom_title: View
-          custom_internal_link: /learn/frequently-asked-questions#toc-cairo
+          custom_internal_link: /learn/starknet-frequently-asked-questions#toc-starknet-token-strk
       - type: image_icon_link_card
         variant: icon_link_card
         size: large
@@ -197,7 +196,7 @@ blocks:
         title: What is Cairo?
         link:
           custom_title: View
-          custom_internal_link: /learn/frequently-asked-questions#toc-cairo
+          custom_internal_link: /learn/starknet-frequently-asked-questions#toc-cairo
       - type: image_icon_link_card
         variant: icon_link_card
         size: large
@@ -211,3 +210,8 @@ blocks:
     md: 2
     lg: 4
     heading: FAQs
+  - type: nav_sticky_banner
+    isActive: true
+    text: From Newbie to Ninja - Master Cairo in our 6-Week Free Online Basecamp!
+    buttonText: Sign Up Now
+    buttonLink: https://us06web.zoom.us/webinar/register/WN_WFNDdyS2TbSqxgNqaqF1Kg#/registration

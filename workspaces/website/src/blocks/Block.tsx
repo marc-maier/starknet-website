@@ -24,6 +24,7 @@ import { YoutubePlayer } from "@ui/YoutubePlayer/YoutubePlayer";
 import NavbarStickyBanner from "../pages/(components)/NavbarStickyBanner/NavbarStickyBanner";
 import DappsPage from "src/pages/starknet-db-projects-dapps/(components)/DappsPage";
 import { getStarknetDappsDbProjects } from "@starknet-io/cms-data/src/starknet-db-projects-dapps";
+import DisplayCardItems from "./DisplayCardItems";
 
 export enum BlockPlacements {
   DEFAULT = "DEFAULT",
@@ -171,6 +172,7 @@ export function Block({
               buttonText={block.buttonText}
               buttonUrl={block.buttonUrl}
               leftBoxMaxWidth={block.leftBoxMaxWidth}
+              darkTextColor={block.darkTextColor}
             />
           );
         case "dapps":
@@ -189,6 +191,15 @@ export function Block({
         case "card_list":
           return (
             <ListCardItems
+              {...block}
+              params={{
+                locale,
+              }}
+            />
+          );
+        case "card_display":
+          return (
+            <DisplayCardItems
               {...block}
               params={{
                 locale,
