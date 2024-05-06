@@ -1,0 +1,71 @@
+id: e4b23094-8e69-4e7d-a81e-c3863cc93120
+post_type: video
+title: Discover DeFi with ZKLEnd
+seoTitle: Discover DeFi with ZKLEnd
+published_date: 2024-02-11T13:10:42.142Z
+video:
+  url: https://www.youtube.com/watch?v=eenFZXlbccI&list=PLcIyXLwiPilVncUsobfoswHE_-GoiNglo&index=8
+  id: eenFZXlbccI
+  data:
+    kind: youtube#video
+    etag: 5JeKPsP03a3jBCkcDZ6dAcxhfXY
+    id: eenFZXlbccI
+    snippet:
+      publishedAt: 2024-02-08T08:00:19.000Z
+      liveBroadcastContent: none
+      thumbnails:
+        default:
+          url: https://i.ytimg.com/vi/eenFZXlbccI/default.jpg
+          width: 120
+          height: 90
+        medium:
+          url: https://i.ytimg.com/vi/eenFZXlbccI/mqdefault.jpg
+          width: 320
+          height: 180
+        high:
+          url: https://i.ytimg.com/vi/eenFZXlbccI/hqdefault.jpg
+          width: 480
+          height: 360
+        standard:
+          url: https://i.ytimg.com/vi/eenFZXlbccI/sddefault.jpg
+          width: 640
+          height: 480
+        maxres:
+          url: https://i.ytimg.com/vi/eenFZXlbccI/maxresdefault.jpg
+          width: 1280
+          height: 720
+      defaultAudioLanguage: en-US
+      channelTitle: StarkWare
+      title: Discover DeFi with ZKLEnd
+      categoryId: "28"
+      localized:
+        title: Discover DeFi with ZKLEnd
+        description: With multicall support, innovative assets like wstETH, and solid
+          security audits, zkLend cements itself as a leading DeFi protocol on
+          Starknet
+      description: With multicall support, innovative assets like wstETH, and solid
+        security audits, zkLend cements itself as a leading DeFi protocol on
+        Starknet
+      channelId: UCnDWguR8mE2oDBsjhQkgbvg
+    contentDetails:
+      duration: PT2M28S
+      dimension: 2d
+      definition: hd
+      caption: "false"
+      licensedContent: false
+      contentRating: {}
+      projection: rectangular
+image: /assets/eenfzxlbcci-hq.jpg
+category:
+  - stark-math
+topic:
+  - defi
+short_desc: >
+  With multicall support, innovative assets like wstETH, and solid security
+  audits, zkLend cements itself as a leading DeFi protocol on Starknet
+post_desc: >
+  With multicall support, innovative assets like wstETH, and solid security
+  audits, zkLend cements itself as a leading DeFi protocol on Starknet.
+seo_desc: >
+  With multicall support, innovative assets like wstETH, and solid security
+  audits, zkLend cements itself as a leading DeFi protocol on Starknet

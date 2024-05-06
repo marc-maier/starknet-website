@@ -36,10 +36,10 @@ items:
       - blocks:
           - title: ""
             items:
+              - custom_title: Bridge
+                custom_external_link: https://starkgate.starknet.io/
               - page: 0dc3d102-0936-433e-9219-f46e3087e396
               - page: d202009a-3541-4366-b664-36ef2e492aa3
-              - custom_title: StarkGate
-                custom_external_link: https://starkgate.starknet.io/
               - page: 5ddb6717-0d91-4d20-a18e-5bc487d54b57
               - page: fd9c4d6e-aaee-42f0-abfc-ef5ffd3944ab
               - page: 9308fd57-e090-4ca9-9581-d9aeb8a3187c
@@ -56,8 +56,14 @@ items:
       - blocks:
           - title: START HERE
             items:
-              - custom_title: Community Hub
-                page: 683db5f6-c625-4fe0-a2af-3c5b6af8c2c9
+              - custom_title: Explore Starknet
+                page: 186916c3-0c7c-48a6-b717-e43d3a7377f4
+          - title: Provisions Program
+            items:
+              - custom_title: Provisions Portal
+                custom_external_link: https://provisions.starknet.io/
+              - custom_title: Provisions Program Plan
+                post: 96c92de7-03ae-4213-982a-c829015038b0
           - title: GET INVOLVED
             items:
               - custom_internal_link: /events
@@ -66,9 +72,6 @@ items:
                 custom_title: Ecosystem jobs
               - custom_title: Governance
                 custom_external_link: https://governance.starknet.io/
-              - custom_internal_link: ""
-                custom_title: Ambassador program
-                page: 5ecdf9cf-d433-478a-a280-07e0f860534f
               - custom_title: Community forum
                 custom_external_link: https://community.starknet.io/
               - page: d4d04818-2330-4c35-a33e-0f2bc3ca7e8f
@@ -98,11 +101,3 @@ items:
                 custom_title: All content
               - custom_title: Media kit
                 page: 575c22e7-477f-4a7e-9b90-7406b802176f
-              - custom_title: Starknet EDU newsletter
-                custom_external_link: https://starknet.substack.com/
-              - custom_title: Starknet research hub
-                custom_external_link: https://starknet-research.beehiiv.com/
-              - custom_title: Starknet Edu Blog
-                custom_external_link: https://medium.com/starknet-edu
-                hide_from_footer: true
-

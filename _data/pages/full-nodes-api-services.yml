@@ -94,7 +94,7 @@ blocks:
         description: Nethermind provides fast and reliable Starknet RPC service built
           for developers.
         image: /assets/nethermind_icon_1600_black-1-.png
-        website_url: http://starknetrpc.nethermind.io/
+        website_url: https://data.voyager.online/
         link_url: http://starknetrpc.nethermind.io/
         twitter: https://twitter.com/NethermindEth
       - description: Chainbase is an open Web3 data infrastructure for accessing,
@@ -110,4 +110,29 @@ blocks:
         discord: https://drpc.org/discord
         description: DRPC is a decentralized network of RPC endpoints with unlimited
           scalability supporting 29+ chains.
+      - title: NowNodes
+        image: /assets/nownodes_listing_logo_1.png
+        description: Starknet RPC Full Node API with zero RPS limits.
+        website_url: https://nownodes.io/starknet
+        twitter: https://twitter.com/NOWNodes
+        discord: https://discord.gg/dYNSCUQVDx
+      - title: GetBlock
+        description: GetBlock provides access to blockchain RPC nodes, supporting over
+          50 blockchain protocols, including Starknet.
+        website_url: https://getblock.io/nodes/strk/
+        twitter: https://twitter.com/getblockio
+        discord: https://discord.gg/Hxw3BQ53
+        image: /assets/logotype1.png
+      - title: Reddio
+        description: A globally low-latency Starknet RPC node service
+        image: /assets/logo_bak.jpg
+        website_url: https://www.reddio.com/node
+        twitter: https://twitter.com/reddio-com
+      - title: QuickNode
+        description: From elastic APIs to powerful tools and analytics, QuickNode has
+          everything you need for accessing the Starknet blockchain.
+        image: /assets/isolated-color.png
+        website_url: https://www.quicknode.com/chains/strk
+        discord: https://discord.gg/quicknode
+        twitter: https://twitter.com/quicknode
     randomize: true

@@ -1,5 +1,7 @@
 id: d4d04818-2330-4c35-a33e-0f2bc3ca7e8f
 title: Online communities
+seoDescription: Access Starknet resources in your language. Bridging the gap for
+  a global community of developers.
 template: content
 parent_page: 683db5f6-c625-4fe0-a2af-3c5b6af8c2c9
 breadcrumbs: true
@@ -40,10 +42,6 @@ blocks:
     heading: Telegram community groups
     listSize: lg
     blocks:
-      - link:
-          hasIcon: true
-          custom_title: Starknet Cairo Core Stars - Pharaohs
-          custom_external_link: https://t.me/sncorestars
       - link:
           hasIcon: true
           custom_title: Starknet China
@@ -96,6 +94,10 @@ blocks:
           hasIcon: true
           custom_title: Starknet Vietnam Community
           custom_external_link: https://t.me/starknetvn
+      - link:
+          hasIcon: true
+          custom_external_link: https://t.me/starknetarabic/3
+          custom_title: Starknet Arabic
   - type: link_list
     randomize: false
     heading: "Global Twitter communities "
@@ -164,6 +166,10 @@ blocks:
           hasIcon: true
           custom_title: Starknet Vietnam
           custom_external_link: https://twitter.com/starknetvietnam
+      - link:
+          hasIcon: true
+          custom_external_link: https://twitter.com/starknetarabic
+          custom_title: X (Twitter) Arabic
   - type: link_list
     randomize: false
     heading: Translated Resources
@@ -198,3 +204,21 @@ blocks:
           hasIcon: true
           custom_title: Starknet China
           custom_external_link: https://www.youtube.com/@starknetzh
+  - type: link_list
+    randomize: false
+    heading: Research & Education Resources
+    blocks:
+      - link:
+          hasIcon: true
+          custom_external_link: https://starknet-research.beehiiv.com/
+          custom_title: Starknet research hub
+        avatar:
+          displayTitle: false
+      - link:
+          hasIcon: true
+          custom_external_link: https://medium.com/starknet-edu
+          custom_title: Starknet Edu Blog
+      - link:
+          hasIcon: true
+          custom_external_link: https://starknet.substack.com/
+          custom_title: Starknet Edu Newsletter

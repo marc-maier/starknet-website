@@ -68,19 +68,6 @@ blocks:
         variant: image_icon_link_card
         orientation: left
         withIllustration: true
-        title: Cairo Docs
-        icon: /assets/cairo-docs.svg
-        type: image_icon_link_card
-        link:
-          custom_title: View
-          custom_external_link: https://docs.cairo-lang.org/
-        description: Read the Cairo documentation to start building on Starknet with Cairo.
-        columns: "4"
-      - size: large
-        color: blue-default
-        variant: image_icon_link_card
-        orientation: left
-        withIllustration: true
         title: Starknet Basecamp
         icon: /assets/starknet-basecamp.svg
         type: image_icon_link_card

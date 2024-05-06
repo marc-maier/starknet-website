@@ -1,0 +1,61 @@
+id: 5ee1ecce-3eff-4f1b-8a70-dc44462bcaaa
+post_type: video
+title: Let's get started on Starknet
+seoTitle: Let's get started on Starknet
+published_date: 2024-02-13T14:18:21.088Z
+video:
+  url: https://www.youtube.com/watch?v=yk6lQM5TiVY&list=PLcIyXLwiPilVncUsobfoswHE_-GoiNglo&index=20
+  id: yk6lQM5TiVY
+  data:
+    kind: youtube#video
+    etag: UOFnXHVAKJpmesIdZjRALysdptk
+    id: yk6lQM5TiVY
+    snippet:
+      publishedAt: 2023-12-27T14:38:43.000Z
+      liveBroadcastContent: none
+      thumbnails:
+        default:
+          url: https://i.ytimg.com/vi/yk6lQM5TiVY/default.jpg
+          width: 120
+          height: 90
+        medium:
+          url: https://i.ytimg.com/vi/yk6lQM5TiVY/mqdefault.jpg
+          width: 320
+          height: 180
+        high:
+          url: https://i.ytimg.com/vi/yk6lQM5TiVY/hqdefault.jpg
+          width: 480
+          height: 360
+        standard:
+          url: https://i.ytimg.com/vi/yk6lQM5TiVY/sddefault.jpg
+          width: 640
+          height: 480
+        maxres:
+          url: https://i.ytimg.com/vi/yk6lQM5TiVY/maxresdefault.jpg
+          width: 1280
+          height: 720
+      defaultAudioLanguage: en-US
+      channelTitle: StarkWare
+      title: "Let's get started on Starknet  #crypto #starknet #cryptocurrency"
+      categoryId: "26"
+      localized:
+        title: "Let's get started on Starknet  #crypto #starknet #cryptocurrency"
+        description: ""
+      description: ""
+      channelId: UCnDWguR8mE2oDBsjhQkgbvg
+    contentDetails:
+      duration: PT59S
+      dimension: 2d
+      definition: hd
+      caption: "false"
+      licensedContent: false
+      contentRating: {}
+      projection: rectangular
+image: /assets/yk6lqm5tivy-hq.jpg
+category:
+  - stark-math
+  - 7eadf561-7b7b-483c-bdaf-39f59a6ad42d
+topic:
+  - getting-started
+short_desc: Let's get started on Starknet
+seo_desc: Let's get started on Starknet

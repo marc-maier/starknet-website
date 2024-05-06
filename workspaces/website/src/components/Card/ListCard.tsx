@@ -66,7 +66,7 @@ export const ListCard = ({
   type,
   recap,
 }: Props) => {
-  const cloudflareImage = `https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${image}`;
+  const cloudflareImage = image; //`https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
   const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
 
   return (

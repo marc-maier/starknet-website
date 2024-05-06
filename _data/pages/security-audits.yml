@@ -1,5 +1,7 @@
 id: af68f1f8-b2a3-49e2-bec0-f36165cc331f
-title: Security & audits
+title: Security & Audit Tools
+seoTitle: Security Services and Tools For Starknet Smart Contracts
+seoDescription: Secure your apps with security services and tools for Starknet smart contracts.
 template: landing
 parent_page: /ecosystem/
 breadcrumbs: false
@@ -7,11 +9,11 @@ page_last_updated: true
 blocks:
   - type: hero
     variant: security
-    title: Security & audits
+    title: Security & Audit Tools
     description: Secure your apps with auditing services for Starknet Smart Contracts.
   - type: card_list
     randomize: true
-    title: Auditing Companies
+    title: Auditing Tools
     card_list_items:
       - title: ABDK
         website_url: https://www.abdk.consulting/
@@ -77,6 +79,23 @@ blocks:
         image: /assets/zellic_telegram-badge_hexagon-1.png
         twitter: https://twitter.com/zellic_io
         website_url: https://www.zellic.io/
+      - title: Cairo Security Clan
+        description: Most talented Starknet auditors united to secure the Starknet
+          ecosystem.
+        image: /assets/img_7042.png
+        website_url: https://cairosecurityclan.com/
+        twitter: https://twitter.com/cairoaudit
+  - type: card_list
+    randomize: false
+    title: Security and Risk Prevention Tool
+    card_list_items:
+      - title: Hypernative
+        description: Hypernative is a real time security and risk prevention platform
+          that helps protocols, chains and asset managers detect hacks/exploits
+          or other custom risk before they happen.
+        website_url: https://www.hypernative.io/
+        twitter: https://twitter.com/HypernativeLabs
+        image: /assets/photo_2024-04-25-13.51.41.jpeg
   - type: card_list
     randomize: true
     title: Bug Bounty Program
