@@ -138,7 +138,7 @@ export const HomepageHero = ({ seo }: Props) => {
                   onClick={() => gtmEvent("Bridge_button_click")}
                 >
                   Bridge
-                  <HiArrowTopRightOnSquare />
+                  <HiArrowTopRightOnSquare strokeWidth={0.5} />
                 </Button>
               </Stack>
             </Box>
