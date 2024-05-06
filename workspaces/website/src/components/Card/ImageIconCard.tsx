@@ -133,7 +133,6 @@ export const ImageIconCard = ({
         }}
       >
         <Card
-          onClick={() => console.log("edfdfd")}
           overflow="hidden"
           borderRadius={{
             base: "24px",
