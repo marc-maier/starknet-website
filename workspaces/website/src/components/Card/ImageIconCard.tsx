@@ -286,10 +286,8 @@ export const ImageIconCard = ({
                   </Text>
                 )}
                 {link && variant === "newsletter_card" && (
-                  <ButtonGroup spacing="2" onClick={(e) => e.preventDefault()}>
-                    <Button href={href} variant={buttonVariant}>
-                      {label} &rarr;
-                    </Button>
+                  <ButtonGroup spacing="2">
+                    <Button variant={buttonVariant}>{label} &rarr;</Button>
                   </ButtonGroup>
                 )}
               </Stack>
