@@ -6,6 +6,7 @@ import { Intro } from "./Intro";
 import ProvisionsPopup from "@ui/ProvisionsPopup/ProvisionsPopup";
 import { gtmEvent } from "src/utils/utils";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+
 type Props = {
   readonly seo: {
     heroText: string;
