@@ -133,7 +133,13 @@ export const ImageIconCard = ({
   const isVariantCommunityOrNewsLetterCard =
     variant === "community_card" || variant === "newsletter_card";
   return (
-    <LinkBox sx={{ textDecoration: "none!important" }} onClick={onClick}>
+    <LinkBox
+      sx={{
+        textDecoration: "none!important",
+        cursor: variant === "newsletter_card" ? "pointer" : "unset",
+      }}
+      onClick={onClick}
+    >
       <CardGradientBorder
         padding="0"
         borderRadius={{
@@ -280,7 +286,7 @@ export const ImageIconCard = ({
                   </Text>
                 )}
                 {link && variant === "newsletter_card" && (
-                  <ButtonGroup spacing="2">
+                  <ButtonGroup spacing="2" onClick={(e) => e.preventDefault()}>
                     <Button href={href} variant={buttonVariant}>
                       {label} &rarr;
                     </Button>
