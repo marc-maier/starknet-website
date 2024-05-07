@@ -317,7 +317,19 @@ export interface TagObject {
   label: string;
   slug: string;
 }
-const blackListTags = ["all"];
+const blackListTags = [
+  "all",
+  "governance",
+  "pfp",
+  "green finance",
+  "cairo",
+  "formal-verification",
+  "dex, wallet, multi-chain, cross-chain, okx, bridge, blockchain",
+  "staking",
+  "access node",
+  "data",
+  "starkware",
+];
 
 const slugifyTags = (objects: Project[]): Project[] => {
   return objects.map((obj) => {
@@ -345,7 +357,9 @@ const extractTags = (projects: Project[]): TagObject[] => {
   }));
 };
 const slugifyDApps = slugifyTags(dAppsData.content);
-const categories = extractTags(dAppsData.content);
+const categories = extractTags(dAppsData.content).sort((a, b) =>
+  a.label > b.label ? 1 : b.label > a.label ? -1 : 0
+);
 
 await fs.mkdir("public/data/starknet-db-projects-dapps", { recursive: true });
 await write(
