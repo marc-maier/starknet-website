@@ -1,4 +1,11 @@
-import { Box, Flex, Img, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Img,
+  Stack,
+  useTheme,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { Button } from "@ui/Button";
 import { Heading } from "@ui/Typography/Heading";
 import { Text } from "@ui/Typography/Text";
@@ -12,6 +19,14 @@ type Props = {
 };
 
 export const HomepageHero = ({ seo }: Props) => {
+  const theme = useTheme();
+  const breakpoints = theme.breakpoints;
+  const { md } = breakpoints;
+  const [isLargerThanSm] = useMediaQuery(`(min-width: ${md})`, {
+    ssr: true,
+    fallback: false,
+  });
+
   return (
     <>
       <ProvisionsPopup />
@@ -129,10 +144,14 @@ export const HomepageHero = ({ seo }: Props) => {
                 <Button
                   size="lg"
                   variant="secondaryHero"
-                  href="https://starkgate.starknet.io/"
-                  target="_blank"
+                  href={
+                    isLargerThanSm
+                      ? "https://starkgate.starknet.io/"
+                      : "/en/what-is-starknet"
+                  }
+                  target={isLargerThanSm ? "_blank" : ""}
                 >
-                  Bridge
+                  {isLargerThanSm ? "Bridge" : "Explore Starknet"}
                 </Button>
               </Stack>
             </Box>
