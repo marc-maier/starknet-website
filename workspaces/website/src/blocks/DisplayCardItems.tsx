@@ -72,12 +72,13 @@ export default function DisplayCardItems({
           )}
         </Flex>
         <List display="flex" flexDirection="column" as="ol" flex={1} gap={4}>
-          {card_display_items?.map(({ title, description }, i) => {
+          {card_display_items?.map(({ title, description, icon }, i) => {
             return (
               <DisplayCard
                 key={title + i}
                 index={i + 1}
                 title={title}
+                icon={icon}
                 description={description}
               />
             );

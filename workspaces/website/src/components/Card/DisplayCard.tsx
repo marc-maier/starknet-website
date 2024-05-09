@@ -7,7 +7,8 @@ import { Results } from "@ui/Icons/DisplayCardIcons/Results";
 import { Heading } from "@ui/Typography/Heading";
 
 type Props = {
-  readonly title:
+  readonly title: string;
+  readonly icon?:
     | "Application"
     | "Internal Evaluation"
     | "Results"
@@ -25,7 +26,12 @@ const images = {
   "Post Grant Check-in": <GrantDeliverables />,
 };
 
-export const DisplayCard = (props: Props) => {
+export const DisplayCard = ({
+  title,
+  icon = "Application",
+  description,
+  index,
+}: Props) => {
   return (
     <Box
       as="li"
@@ -56,7 +62,7 @@ export const DisplayCard = (props: Props) => {
             _dark={{ color: "white" }}
             marginBottom={{ base: "16px", md: "0" }}
           >
-            {images[props?.title]}
+            {images[icon]}
           </Box>
         </Stack>
         <Box flex="1">
@@ -71,7 +77,7 @@ export const DisplayCard = (props: Props) => {
               _dark={{ bg: "white", color: "black" }}
               color="white"
             >
-              {props.index}
+              {index}
             </Circle>
             <Heading
               variant="h4"
@@ -81,10 +87,10 @@ export const DisplayCard = (props: Props) => {
                 color: "button-nav-fg",
               }}
             >
-              {props.title}
+              {title}
             </Heading>
           </Stack>
-          <Text>{props.description}</Text>
+          <Text>{description}</Text>
         </Box>
       </Stack>
     </Box>
