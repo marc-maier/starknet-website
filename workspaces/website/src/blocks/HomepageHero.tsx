@@ -144,22 +144,24 @@ export const HomepageHero = ({ seo }: Props) => {
                 <Button
                   size="lg"
                   variant="secondaryHero"
-                  href={
-                    isLargerThanSm
-                      ? "https://starkgate.starknet.io/"
-                      : "/en/what-is-starknet"
-                  }
-                  target={isLargerThanSm ? "_blank" : ""}
+                  display={!isLargerThanSm ? "flex" : "none"}
+                  href={"/en/what-is-starknet"}
+                  target={"_blank"}
                 >
-                  {isLargerThanSm ? "Bridge" : "Explore Starknet"}
+                  {"Explore Starknet"}
+                </Button>
+                <Button
+                  size="lg"
+                  display={isLargerThanSm ? "flex" : "none"}
+                  variant="secondaryHero"
+                  href={"https://starkgate.starknet.io/"}
+                  target={"_blank"}
+                >
+                  {"Bridge"}
                 </Button>
               </Stack>
             </Box>
-            <Box
-              zIndex={0}
-              order={{ base: 0, lg: 1 }}
-              // boxSize={{ base: "20", lg: "8" }}
-            />
+            <Box zIndex={0} order={{ base: 0, lg: 1 }} />
             <Img
               position="relative"
               marginRight={{
