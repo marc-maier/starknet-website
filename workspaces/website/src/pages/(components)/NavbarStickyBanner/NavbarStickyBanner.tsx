@@ -38,12 +38,12 @@ const NavbarStickyBanner = ({
   return (
     <ClientOnly>
       <Center
-        px={{ base: 2, xl: "unset" }}
+        px={{ base: 4, xl: "unset" }}
         bgColor="snNavy"
         display={isOpen ? "flex" : "none"}
         overflow="hidden"
         transition="max-height 1.5s"
-        gap={{ xs: 3, base: 6 }}
+        gap={{ base: 2, md: 6 }}
         py={2}
         zIndex={10}
         _dark={{ bgColor: "surfaceAccent" }}
@@ -53,7 +53,9 @@ const NavbarStickyBanner = ({
             textAlign={{ base: "left", md: "center" }}
             color="white"
             _dark={{ color: "snNavy" }}
-            width={{ base: "245px", sm: "unset" }}
+            width={{ base: "unset", sm: "245px", md: "unset" }}
+            fontSize={{ base: "12px", sm: "14px", lg: "unset" }}
+            noOfLines={2}
           >
             {text}
           </Text>
@@ -67,7 +69,7 @@ const NavbarStickyBanner = ({
             color="snNavy"
             fontWeight={600}
             lineHeight="21px"
-            fontSize={{ base: 12, sm: 14 }}
+            fontSize={14}
             _dark={{
               color: "white",
               bgColor: "darkMode.card",
@@ -83,7 +85,7 @@ const NavbarStickyBanner = ({
           width="22px"
           height="22px"
           aria-label="Close"
-          mx={3}
+          mx={2}
           _dark={{
             color: "darkMode.card",
             bgColor: "transparent",
