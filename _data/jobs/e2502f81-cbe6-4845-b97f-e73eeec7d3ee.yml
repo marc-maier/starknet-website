@@ -1,0 +1,22 @@
+id: e2502f81-cbe6-4845-b97f-e73eeec7d3ee
+published_at: 2024-03-13T08:54:09.592Z
+status: active
+archive_after: 3
+contact:
+  name: Nethermind
+  logo: /assets/nethermind-logo.png
+job:
+  title: TEE/SGX Engineer
+  description: We are seeking a skilled TEE/SGX Engineer to join our blockchain
+    development team, focusing on the Ethereum rollup ecosystem. The candidate
+    will be at the forefront of implementing cutting-edge solutions using
+    Trusted Execution Environments (TEE) and Intel Software Guard Extensions
+    (SGX) to enhance security and efficiency in blockchain applications. Strong
+    background in computer science, cryptography, or a related field is
+    required. Proven experience with TEE and SGX programming, particularly in a
+    distributed systems contex and experience with Ethereum, rollups, and
+    understanding of the EVM. Proficiency in C/C++, Rust, or Go programming
+    languages.
+  type: full_time
+  location: global_remote
+  apply_url: https://grnh.se/e2cdddb2teu

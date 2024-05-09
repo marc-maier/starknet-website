@@ -66,12 +66,35 @@ export interface ListCardItems {
   type: string;
 }
 
+export interface DisplayCardItems {
+  title: string;
+  icon?:
+    | "Application"
+    | "Internal Evaluation"
+    | "Results"
+    | "Onboarding"
+    | "Post Grant Check-in";
+  description: string;
+  image?: string;
+}
+
 export interface ListCardItemsBlock {
   readonly type: "card_list";
   readonly title: string;
   readonly card_list_items: ListCardItems[];
   readonly noOfItems: number;
   readonly description: string;
+  randomize?: boolean;
+  reverse?: boolean;
+  showIcons?: boolean;
+}
+export interface DisplayCardItemsBlock {
+  readonly type: "card_display";
+  readonly title: string;
+  readonly card_display_items: DisplayCardItems[];
+  readonly noOfItems: number;
+  readonly button: string;
+  readonly buttonLink: string;
   randomize?: boolean;
 }
 
@@ -115,6 +138,7 @@ export interface PageHeaderBlock {
 
 export interface HeroBlock {
   readonly type: "hero";
+  readonly darkTextColor?: boolean;
   readonly title: string;
   readonly description: string;
   readonly variant?:
@@ -202,6 +226,7 @@ export type Block =
   | AccordionBlock
   | OrderedBlock
   | ListCardItemsBlock
+  | DisplayCardItemsBlock
   | AmbassadorsListBlock
   | VideoSectionBlock
   | NewsletterBlock;

@@ -1,0 +1,17 @@
+type: conference
+name: EDCON
+description: "EDCON (Community Ethereum Development Conference)Once a year, the
+  most impactful speakers, mentors and projects from around the world are
+  invited to attend and share their message. Prior years include: Paris 2017,
+  Toronto 2018, Sydney 2019, Online 2020-21, San Francisco 2022, and Montenegro
+  2023. EDCON is committed to serving the Ethereum ecosystem by boosting
+  communication and engagement between Ethereum communities worldwide."
+url: https://www.edcon.io/
+start_date: 2024-07-26T06:00:25.106Z
+month: July 2024
+end_date: 2024-07-30T15:00:25.111Z
+show_in_past_events: false
+image: /assets/screenshot-2024-04-07-at-13.22.15.png
+location: asia
+city: Tokyo
+country: Japan

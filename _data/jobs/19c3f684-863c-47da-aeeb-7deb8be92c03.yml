@@ -1,0 +1,36 @@
+id: 19c3f684-863c-47da-aeeb-7deb8be92c03
+published_at: 2024-03-13T08:51:50.385Z
+status: active
+archive_after: 3
+contact:
+  name: Nethermind
+  logo: /assets/nethermind-logo.png
+job:
+  title: Mechanism Designer
+  description: "An ideal candidate has a strong understanding of algorithmic game
+    theory, in understanding it, in applying it, and in using it to prove the
+    game-theoretic robustness of protocols. In other words, the ideal candidate
+    has a track record in mechanism design. Beyond game theoretic fundamentals,
+    an appreciation for how game theoretic assumptions change in the asynchrony
+    and irrationality of distributed systems is highly preferable. While a basic
+    understanding of L1 and L2 designs, systemic risks, and consensus algorithms
+    is required, a strong understanding is preferred. You should be able to work
+    in a distributed research team, express their research ideas clearly, and
+    know how to argue their findings formally. We appreciate candidates who are
+    not afraid of voicing their opinions and motivate them or ask for
+    explanations of concepts they are not familiar with. Responsibilities: As a
+    mechanism designer, you will participate in research on, for example:
+    Transaction fee mechanisms. Prover coordination and sequencer design,
+    decentralization, incentivization. Auctioning block-building rights. Levels
+    of finality, and risks associated with each. Staking: vanilla staking,
+    restaking, liquid staking, and systemic risks they come with. L2 governance,
+    PoS vs PoG, etc. Skills: An algorithmic game theory track record, including
+    a strong preference for published work in the field. Ability to identify
+    mechanism design problems and propose solutions. An understanding of
+    distributed protocol design. Particularly, a demonstrable ability to
+    identify the trade-offs faced by protocols when deployed on blockchains.
+    Familiarity with Ethereum: how it works and why? Familiarity with designs of
+    L2s. Ability to express thoughts precisely."
+  location: global_remote
+  type: full_time
+  apply_url: https://grnh.se/6da9e102teu

@@ -1,7 +1,4 @@
 items:
-  - username: LiranRich
-    access:
-      - events
   - username: Karinbd1
     access:
       - events
@@ -17,6 +14,7 @@ items:
   - username: stoobie
     access:
       - roadmap
+      - all
     name: Steve Goodman
   - username: OfirEinhorn
     access:
@@ -38,5 +36,43 @@ items:
       - all
   - username: igalst
     name: Igal Steklov
+    access:
+      - all
+  - name: Damian
+    access:
+      - all
+    username: thdamooo
+  - username: shadowfaxxxx
+    name: Marijke van Engelenburg
+    access:
+      - pages
+      - posts
+      - tutorials
+      - seo
+      - events
+  - username: starkience
+    name: Victor Sizaret
+    access:
+      - pages
+      - posts
+      - tutorials
+      - seo
+      - events
+  - username: GalShapira2529
+    name: GalShapira
+    access:
+      - all
+  - username: eilaKappAmir
+    name: Eila Kapp Amir
+    access:
+      - events
+      - pages
+      - seo
+  - username: theowolff
+    name: Tobby - Webiya
+    access:
+      - all
+  - username: rocoscali
+    name: Roi Webiya
     access:
       - all

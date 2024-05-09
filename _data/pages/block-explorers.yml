@@ -58,7 +58,7 @@ blocks:
         title: NFTScan - NFT explorer
         image: /assets/400_400.png
         twitter: https://twitter.com/nftscan_com
-        discord: discord.gg/nftscan
+        discord: https://discord.gg/nftscan
       - title: Stark Compass
         description: An open-source Starknet explorer.
         twitter: https://twitter.com/starkcompass
@@ -85,6 +85,20 @@ blocks:
         title: Token Flow
         image: /assets/token-flow-logo.jpg
         website_url: https://tokenflow.live/
+      - title: Footprint Analytics
+        description: Footprint Analytics is a data platform blending web2 and web3 data
+          with abstractions.
+        image: /assets/5336301-180.png
+        website_url: https://www.footprint.network/research/chain/chain-stats/starknet-overview?series_date-80244=past90days
+        twitter: https://twitter.com/Footprint_Data
+        discord: https://discord.gg/3HYaR6USM7
+      - title: DipDup
+        description: DipDup is an open-source indexing stack, providing GraphQL access
+          to  decoded on-chain data, NFT balances & transfers, and app-specific
+          collections.
+        twitter: https://twitter.com/dipdup_io
+        website_url: https://dipdup.io/
+        image: /assets/photo_2024-03-24-18.14.02.jpeg
   - type: card_list
     randomize: true
     title: Enhanced API
@@ -104,8 +118,14 @@ blocks:
       - title: NFTScan
         description: Leverage NFTScan's feature-rich NFT APIs for your projects.
         website_url: https://developer.nftscan.com/
-        discord: discord.gg/nftscan
+        discord: https://discord.gg/nftscan
         image: /assets/400_400.png
         twitter: https://twitter.com/nftscan_com
+      - title: ArkProject
+        description: "Crosschain Infrastructure for Digital Assets Exchange: Appchain
+          Orderbook, Starknet NFT API, NFT Indexer, Starknet NFT Bridge."
+        twitter: https://twitter.com/ArkProjectNFTs
+        website_url: https://www.arkproject.dev/
+        image: /assets/arkproject_square.png
     description: An enhanced API is a set of tools designed to simplify developers’
       access to complex queries on Starknet data.

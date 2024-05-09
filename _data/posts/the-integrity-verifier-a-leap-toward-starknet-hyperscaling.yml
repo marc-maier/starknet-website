@@ -1,0 +1,93 @@
+id: 3efcedbb-a932-419a-84c5-36a36f3d5e11
+post_type: article
+isFeatured: false
+title: "The Integrity verifier: A leap toward Starknet hyperscaling "
+seoTitle: The Integrity Verifier opens the door to Starknet L3s
+toc: true
+published_date: 2024-04-21T12:18:16.162Z
+image: /assets/image.png
+category:
+  - engineering
+topic:
+  - 47ef120d-7b74-40a3-acb2-0ff2af28ecf4
+  - bf9c7bc3-ba10-4865-8e69-8be4cfa68f29
+short_desc: Herodotus's Integrity Verifier on Starknet allows for the
+  verification of Cairo programs, facilitating Layer 3 scaling and reducing
+  costs. This innovation supports the development of customizable appchains and
+  expands possibilities for applications like storage-proof validation and
+  zero-knowledge machine learning, enhancing scalability and functionality on
+  the network.
+post_desc: ""
+seoFocusKeywords:
+  - Integrity
+  - verifier
+blocks:
+  - type: markdown
+    body: >-
+      #### TL;DR
+
+
+      * The Integrity Verifier, built by Herodotus, enables developers to verify on Starknet the execution of Cairo programs performed elsewhere.
+
+      * By introducing an extra layer of proof compression—and therefore cost reduction—on Starknet before settlement on Ethereum, the Integrity Verifier brings to life Layer 3 (L3) scaling. 
+
+      * One of several options for supercharging scalability on Starknet, L3 scaling opens the door to building fully customizable appchains that leverage the Integrity Verifier’s added layer of cost reduction.
+
+      * Other use cases will also benefit from the Integrity Verifier’s verification capabilities on Starknet, including storage-proof validation and zero-knowledge machine learning. 
+
+
+      ## Intro
+
+
+      Over two years ago, StarkWare [introduced the concepts of fractal scaling and Layer 3 (L3)](https://starkware.co/resource/fractal-scaling-from-l2-to-l3/), which empower developers to build fully customizable appchains with an extra layer of cost reduction over Layer 2 (L2) networks. Now, storage-proof innovator [Herodotus](https://herodotus.dev/) is taking the first major step toward bringing this capability to Starknet. 
+
+
+      Supported by StarkWare, Herodotus has launched its [Integrity Verifier](https://integrityverifier.com/) that enables the verification of Stone proofs on Starknet. With this new verifier, developers can verify on Starknet the execution of Cairo programs that were performed elsewhere, just as they can verify Starknet execution on Ethereum. 
+
+
+      ## Opening the door to L3 appchains
+
+
+      One of its most powerful capabilities, the Integrity Verifier enables building specialized chains ([appchains](https://book.starknet.io/ch03-05-layer-3.html)) on Starknet at lower cost. 
+
+
+      This requires building a layer on top of Starknet where transactions can be executed and bundled into a proof that attests to their validity. The verification of these proofs on L2 is where the Integrity Verifier comes into play. With this new verifier, proofs generated using [Stone](https://starkware.co/resource/open-sourcing-the-battle-tested-stone-prover/)—and next, also [Stwo](https://starkware.co/resource/stwo-prover-the-next-gen-of-stark-scaling-is-here/)—can be verified on Starknet, thus validating the execution of the transactions performed on the appchain.
+
+
+      As Starknet appchains still settle on Ethereum, they inherit the network’s security—just like Starknet itself. But appchains on Starknet also offer additional benefits: 
+
+
+      * Customization: Overall, [appchains](https://starkware.co/resource/what-are-appchains/) offer developers even greater flexibility than they already have on the public L2, maximizing the ability to customize various aspects of their apps. Think, for example, of block size, latency, data-availability mode, and even implementing features not supported by the public L2.
+
+      * Hyperscaling: When an appchain is built as an L3, Starknet further compresses the proof before verifying it on Ethereum. Such appchains benefit from yet another layer of cost reduction that makes it economically feasible to develop more complex use cases, such as high-frequency DeFi trading, supply-chain management, and fully onchain gaming. 
+
+      * Congestion avoidance: Appchains provide a more stable transaction environment (crucial for real-time applications like gaming), shielding from potential network congestion on the public L2 once blockchain achieves mass adoption.
+
+
+      ## Other benefits of the Integrity Verifier’s scalable verification
+
+
+      Zooming out, since Cairo is a [Turing-complete language](https://eprint.iacr.org/2021/1063.pdf) and the Integrity Verifier verifies the execution of Cairo programs, the verifier enables cheap validation of any computation on Starknet. This added layer of cost reduction can benefit many use cases other than appchains, with two prominent examples being storage proofs and zero-knowledge machine learning (ZKML).
+
+
+      Storage proofs make it economically feasible to validate any blockchain state at any point in the past without needing to trust a third party. Fun fact: Herodotus, the team behind the Integrity Verifier, recently made storage proofs even better by providing trustless proving of Ethereum [all the way back to the genesis block](https://starkware.co/resource/proving-ethereums-state-on-starknet-with-herodotus/). STARK proofs reduce the cost of storage proofs, and the Integrity Verifier opens the door to reducing costs even further. 
+
+
+      ZKML, an idea that has gained interest as AI becomes a bigger part of our lives, refers to the concept of using zero-knowledge proofs to validate the computation of AI models. 
+
+
+      In a field like AI, which often suffers from a lack of transparency, that could be a game changer. Scalable validation of AI can’t provide insights into the way a model “thinks” or arrives at its conclusions, but it can validate that the right model is, in fact, being used. Tools like the Integrity Verifier could make ZKML economically feasible by making the validation of AI models more cost-effective.
+
+
+      Already, Herodotus announced a [partnership with ZKML innovator Giza](https://herodotusdev.medium.com/herodotus-giza-ca335f944db1) to work toward empowering developers to build powerful, secure, and trustless AI applications. The Integrity Verifier is a part of that effort.
+
+
+      ## Conclusion
+
+
+      The launch of the Integrity Verifier represents one of the first major strides toward hyperscaling on Starknet. By enabling developers to verify on Starknet the execution of Cairo programs that were performed elsewhere, the verifier opens the door to brand-new capabilities on the network. These range from building customizable appchains with extra cost reduction to developing novel use cases, such as ZKML. 
+
+
+      **\
+
+      Stay tuned for more updates on projects doubling down on Starknet scalability. Also, keep in mind L3 is only one of the tools available for added scalability on Starknet, with more to come. For updates, [follow Starknet on X](https://twitter.com/Starknet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).**

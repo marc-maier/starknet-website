@@ -1,0 +1,33 @@
+id: 41e62995-b116-43a9-959d-26cb12b3ed8a
+published_at: 2024-03-13T08:50:37.153Z
+status: active
+archive_after: 3
+contact:
+  name: Nethermind
+  logo: /assets/nethermind-logo.png
+job:
+  title: Consensus Research Engineer
+  description: "Are you the one? As a Consensus Research Engineer, you will tackle
+    complex problems in designing and implementing consensus algorithms. Your
+    role will involve a thorough analysis of existing algorithms, assessing
+    their throughput, finality, and security aspects. This position offers a
+    unique opportunity to contribute to cutting-edge research in consensus
+    mechanisms, particularly within blockchain technology. Responsibilities:
+    Design and implement custom consensus algorithms tailored to specific
+    requirements. Conduct in-depth analysis of existing consensus algorithms,
+    evaluating their performance metrics, including throughput, finality, and
+    security. Collaborate with cross-functional teams to integrate and optimize
+    consensus mechanisms within blockchain systems. Stay updated with the latest
+    developments and research in consensus algorithms and distributed computing.
+    Skills: Proficiency in consensus algorithms, with a strong understanding of
+    their underlying principles and applications, especially within blockchain
+    technology. Experience in designing and implementing consensus algorithms or
+    related distributed systems. Solid understanding of distributed computing
+    problems and solutions. Strong analytical and problem-solving skills, with
+    the ability to critically evaluate complex systems. Excellent communication
+    skills, with the ability to effectively convey technical concepts to both
+    technical and non-technical audiences. Experience in developing distributed
+    systems."
+  type: full_time
+  location: global_remote
+  apply_url: https://boards.eu.greenhouse.io/nethermind/jobs/4297644101
