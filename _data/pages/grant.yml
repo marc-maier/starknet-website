@@ -19,20 +19,25 @@ blocks:
       - title: Application
         description: "Applicants will submit proposals via an Questbook application form
           provided by the Starknet Foundation team. "
+        icon: Application
       - title: Internal Evaluation
         description: " Each application will be assessed by members of the Starknet
           Foundation and Starkware team based on criteria such as potential
           impact, innovation, milestones, community engagement & track record,
           and embeddedness with the Starknet ecosystem."
+        icon: Internal Evaluation
       - title: Results
         description: We plan to communicate decisions on your application within an
           approximate two week timeframe.
+        icon: Results
       - title: Onboarding
         description: "Upon signing a grant agreement and completing KYC, the Starknet
           Foundation will send funds. "
+        icon: Onboarding
       - title: Grant Deliverables
         description: "After completion of the work, the Foundation will assess results
           and share deliverables (blog post, video, AMA) with the team.  "
+        icon: Post Grant Check-in
   - type: container
     blocks:
       - type: flex_layout
