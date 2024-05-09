@@ -263,10 +263,17 @@ export const cardDisplayItem = [
     crowdin: false,
   },
   {
-    label: "Image",
+    label: "Icon",
     required: false,
-    name: "image",
-    widget: "image",
+    name: "icon",
+    widget: "select",
+    options: [
+      "Application",
+      "Internal Evaluation",
+      "Results",
+      "Onboarding",
+      "Post Grant Check-in",
+    ],
     crowdin: false,
   },
 ] satisfies CmsField[];

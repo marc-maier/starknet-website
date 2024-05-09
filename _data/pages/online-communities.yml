@@ -212,8 +212,6 @@ blocks:
           hasIcon: true
           custom_external_link: https://starknet-research.beehiiv.com/
           custom_title: Starknet research hub
-        avatar:
-          displayTitle: false
       - link:
           hasIcon: true
           custom_external_link: https://medium.com/starknet-edu

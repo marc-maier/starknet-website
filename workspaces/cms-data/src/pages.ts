@@ -67,12 +67,13 @@ export interface ListCardItems {
 }
 
 export interface DisplayCardItems {
-  title:
+  title: string;
+  icon?:
     | "Application"
     | "Internal Evaluation"
     | "Results"
     | "Onboarding"
-    | "Grant Deliverables";
+    | "Post Grant Check-in";
   description: string;
   image?: string;
 }
