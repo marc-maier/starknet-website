@@ -2,7 +2,7 @@ id: 80c9a40d-ac4c-4bee-8c78-dd83667a1a97
 title: Grant
 show_title: false
 seoTitle: Seed Grants Program | Starknet
-seoDescription: The Seed Grant Program is designed to provide teams with grants
+seoDescription: The Seed Grants Program is designed to provide teams with grants
   up to $25,000 in USDC in non-dilutive funding to enhance the growth of the
   Starknet ecosystem.
 template: landing
@@ -23,15 +23,15 @@ blocks:
         blocks:
           - type: markdown
             body: >-
-              The Seed Grant Program is designed to provide teams with grants up
-              to $25,000 in USDC in non-dilutive funding to enhance the growth
-              of the Starknet ecosystem. 
+              The Seed Grants Program is designed to provide teams with grants
+              up to $25,000 in USDC in non-dilutive funding to enhance the
+              growth of the Starknet ecosystem. 
 
 
               This program has a simplified application and evaluation process, aiming to provide a decision approximately two weeks after submission. 
 
 
-              Seed Grants  are  intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven't yet gone to market. They are appropriate for projects and teams that meet the following criteria:
+              Seed Grants are intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven't yet gone to market. They are appropriate for projects and teams that meet the following criteria:
 
 
               * actively involved in the Starknet community and / or participated in a Starknet hackathon, builder program, or other entry-level initiative;
@@ -113,7 +113,7 @@ blocks:
     reverse: true
     showIcons: false
     card_list_items:
-      - title: Seed Grant Program Application Form
+      - title: Seed Grants Program Application Form
         description: Application Form
         image: /assets/sn-symbol-gradient.png
         website_url: https://tinyurl.com/snf-seed-grants
@@ -122,8 +122,8 @@ blocks:
       - type: accordion
         heading: FAQs
         blocks:
-          - label: What is the Seed Grant Program?
-            body: The Seed Grant Program is designed to provide teams with grants up to
+          - label: What is the Seed Grants Program?
+            body: The Seed Grants Program is designed to provide teams with grants up to
               $25,000 in USDC in non-dilutive funding to enhance the growth of
               the Starknet ecosystem.
           - label: Who can apply?
