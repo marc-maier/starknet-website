@@ -58,7 +58,7 @@ blocks:
   - type: card_display
     title: Application Process
     button: Apply Now
-    buttonLink: https://starknet.questbook.app/proposal_form/?grantId=661667585afea0acb56c9f08&chainId=10&newTab=true
+    buttonLink: https://tinyurl.com/snf-seed-grants
     card_display_items:
       - title: Application
         description: "Apply via our grants submission form to submit your project. You
