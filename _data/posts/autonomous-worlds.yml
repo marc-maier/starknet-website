@@ -110,3 +110,32 @@ blocks:
 
 
       As autonomous worlds continue to evolve, it will be essential for developers, users, and policymakers to engage in ongoing dialogue and collaboration. By working together to address the challenges and seize the opportunities presented by this transformative technology, we can ensure that the growth of autonomous worlds is guided by principles of inclusion, transparency, and social responsibility.
+  - type: accordion
+    heading: Autonomous Worlds FAQs
+    blocks:
+      - label: What are autonomous worlds?
+        body: Autonomous worlds are decentralized, blockchain-powered virtual
+          environments that offer a new way of interacting, creating, and
+          transacting online. They feature self-contained ecosystems with
+          consistent rules and narrative elements, redefining immersion and
+          ownership in digital spaces.
+      - label: How do autonomous worlds maintain their integrity and security?
+        body: Integrity and security in autonomous worlds are maintained through
+          consensus mechanisms. These require a distributed network of nodes to
+          validate and approve every transaction and state change, ensuring the
+          environment is resistant to tampering and fraud.
+      - label: What are the potential applications of autonomous worlds?
+        body: Autonomous worlds are particularly promising for onchain gaming and social
+          interaction, providing platforms for immersive player-driven gaming
+          experiences and community building across different geographical and
+          cultural boundaries.
+      - label: What challenges do autonomous worlds face?
+        body: Key challenges include scalability, ensuring performance and security with
+          many users, interoperability between different worlds, and regulatory
+          issues such as jurisdiction and legal responsibility in virtual
+          spaces.
+      - label: How do autonomous worlds impact the creator economy?
+        body: They offer significant opportunities for creators by allowing them to
+          build, manage, and monetize virtual assets and experiences in a
+          decentralized environment, potentially redefining content creation and
+          revenue sharing within these digital landscapes.
