@@ -77,6 +77,7 @@ const NavbarStickyBanner = ({
             }}
             _hover={{ bgColor: "white" }}
             variant="solid"
+            target="_blank"
           >
             {buttonText}
           </Button>
