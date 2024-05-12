@@ -40,7 +40,7 @@ blocks:
       In autonomous worlds, users have true ownership over their digital assets, backed by the security and immutability of the blockchain. This enables the emergence of vibrant in-world economies, where virtual items and currencies have real-world value and can be freely traded and exchanged.
 
 
-      ### Diegetic boundaries and consensus 
+      **Diegetic boundaries and consensus**
 
 
       Central to autonomous worlds, diegetic boundaries refer to the clear distinction between what is and isn't part of the world. In these environments, the introduction of new elements is governed by a set of predefined rules, encoded into the blockchain itself. This ensures every change is added by consensus of the nodes running the decentralized network.
@@ -82,7 +82,7 @@ blocks:
       As autonomous worlds continue to evolve and mature, we can expect to see a proliferation of new business models and revenue streams. From virtual real estate and asset management to decentralized marketplaces and creative economies, the possibilities are endless. The key to unlocking this potential will be fostering a culture of collaboration, experimentation, and community-driven innovation.
 
 
-      ## Autonomous Worlds and Starknet 
+      ## Autonomous Worlds and Starknet
 
 
       [Cartridge](https://twitter.com/cartridge_gg), the team behind Dojo, provides the necessary infrastructure on Starknet to build, ship, and explore autonomous worlds. Dojo, a provable game engine, allows developers to create autonomous worlds using the Cairo programming language.
