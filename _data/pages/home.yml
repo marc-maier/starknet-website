@@ -211,7 +211,7 @@ blocks:
     lg: 4
     heading: FAQs
   - type: nav_sticky_banner
-    isActive: false
-    text: Master Cairo in our 6-Week Free Online Basecamp!
-    buttonText: Sign Up Now
-    buttonLink: https://us06web.zoom.us/webinar/register/WN_WFNDdyS2TbSqxgNqaqF1Kg#/registration
+    isActive: true
+    text: Join our Stark @ Home about STWO & Circle STARK!
+    buttonText: Join Now
+    buttonLink: https://streamyard.com/watch/ndVNnBQgZgqF
