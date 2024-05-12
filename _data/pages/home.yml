@@ -211,7 +211,7 @@ blocks:
     lg: 4
     heading: FAQs
   - type: nav_sticky_banner
-    isActive: true
+    isActive: false
     text: Master Cairo in our 6-Week Free Online Basecamp!
     buttonText: Sign Up Now
     buttonLink: https://us06web.zoom.us/webinar/register/WN_WFNDdyS2TbSqxgNqaqF1Kg#/registration
