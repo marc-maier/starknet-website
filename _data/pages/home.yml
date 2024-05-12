@@ -212,6 +212,6 @@ blocks:
     heading: FAQs
   - type: nav_sticky_banner
     isActive: true
-    text: Join our Stark@Home about STWO & Circle STARK
-    buttonText: Join Now!
+    text: Join our Stark@Home about STWO & Circle STARK!
+    buttonText: Register Now
     buttonLink: https://streamyard.com/watch/ndVNnBQgZgqF
