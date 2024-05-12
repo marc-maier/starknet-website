@@ -1,6 +1,1 @@
-announcements:
-  - isActive: false
-    text: Test
-    image: https://www.starknet.io/assets/guide-image-3-.jpg
-    buttonText: Test
-    buttonLink: https://www.starknet.io/test
+announcements: []
