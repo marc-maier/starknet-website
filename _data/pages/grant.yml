@@ -28,7 +28,7 @@ blocks:
               growth of the Starknet ecosystem. 
 
 
-              This program has a simplified application and evaluation process, aiming to provide a decision approximately two weeks after submission. 
+              This program has a simplified application and evaluation process, aiming to provide a decision at the earliest.
 
 
               Seed Grants are intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven't yet gone to market. They are appropriate for projects and teams that meet the following criteria:
@@ -65,8 +65,8 @@ blocks:
           potential impact, innovation, milestones, community engagement & track
           record, and embeddedness with the Starknet ecosystem.
       - title: Results
-        description: "We plan to communicate decisions on your application within an
-          approximate two week timeframe. "
+        description: "We plan to communicate decisions on your application at the
+          earliest. "
       - title: Onboarding
         description: After successfully completing KYC and signing a grant agreement,
           you will receive funds.
@@ -144,7 +144,7 @@ blocks:
           - label: What currency are grants paid in?
             body: Grants are paid out in USDC.
           - label: How long will it take to receive a response on my application?
-            body: Results will be communicated to applicants within two weeks.
+            body: Results will be communicated to applicants at the earliest.
           - label: What types of projects do you provide grants to?
             body: There are no restrictions on the types of products we consider.  Any
               project building on Starknet that is not ineligible can apply for
